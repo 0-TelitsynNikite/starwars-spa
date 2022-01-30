@@ -3,7 +3,7 @@ import StarWarsApi from "../../services/StarWarsApi";
 import PeopleItem from "../PeopleItem/PeopleItem";
 import {getPeopleId, getPeopleImage} from "../../services/getPeopleData";
 import {URL_IMG_PERSON} from "../../constants/constants";
-import '../../styles/lists.css'
+import '../../styles/lists.scss'
 
 const PeopleList = () => {
     const [people, setPeople] = useState(null);
