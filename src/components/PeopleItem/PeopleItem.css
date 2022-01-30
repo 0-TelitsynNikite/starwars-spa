@@ -1,0 +1,28 @@
+.characters-list__item {
+    width: 190px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.characters-list__img {
+    border-radius: 4px 4px 0px 0px;
+    width: 100%;
+}
+
+.characters-list__text {
+    color: #333;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.characters-list__item:hover {
+    box-shadow: 0 0 20px #30FF00;
+}
+
+.characters-list__text:hover {
+    color: #30FF00;
+    text-shadow: 0 0 15px #30FF00;
+}

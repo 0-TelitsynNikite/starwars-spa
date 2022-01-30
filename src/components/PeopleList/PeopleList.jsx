@@ -3,6 +3,7 @@ import StarWarsApi from "../../services/StarWarsApi";
 import PeopleItem from "../PeopleItem/PeopleItem";
 import {getPeopleId, getPeopleImage} from "../../services/getPeopleData";
 import {URL_IMG_PERSON} from "../../constants/constants";
+import './PeopleList.css'
 
 const PeopleList = () => {
     const [people, setPeople] = useState(null);
@@ -30,7 +31,7 @@ const PeopleList = () => {
     return (
             <>
                 {people && (
-                    <ul>
+                    <ul className="characters-list">
                         {people.map(({name, id, image}) => <PeopleItem name={name} key={id} image={image}/>)}
                     </ul>
                 )}
