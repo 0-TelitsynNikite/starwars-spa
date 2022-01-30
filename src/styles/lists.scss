@@ -1,3 +1,5 @@
+@import './index.scss';
+
 .list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -27,10 +29,10 @@
 }
 
 .list__item:hover {
-    box-shadow: 0 0 20px #30FF00;
+    box-shadow: 0 0 20px $green;
 }
 
 .list__text:hover {
-    color: #30FF00;
-    text-shadow: 0 0 15px #30FF00;
+    color: $gold;
+    text-shadow: 0 0 15px $gold;
 }

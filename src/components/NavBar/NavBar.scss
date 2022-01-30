@@ -1,3 +1,5 @@
+@import '../../styles/index.scss';
+
 .nav {
     display: flex;
     justify-content: flex-start;
@@ -8,10 +10,10 @@
 
 .nav__item {
     text-shadow:
-            1px 1px 0 #EAFF00,
-            1px -1px 0 #EAFF00,
-            -1px 1px 0 #EAFF00,
-            -1px -1px 0 #EAFF00;
+            1px 1px 0 $gold,
+            1px -1px 0 $gold,
+            -1px 1px 0 $gold,
+            -1px -1px 0 $gold;
     color: #333;
     font-size: 20px;
     transition: all 1s;
@@ -19,8 +21,8 @@
 
 .nav__item:hover {
     text-shadow:
-            1px 1px 0 #00FF0C,
-            1px -1px 0 #00FF0C,
-            -1px 1px 0 #00FF0C,
-            -1px -1px 0 #00FF0C;
+            1px 1px 0 $green,
+            1px -1px 0 $green,
+            -1px 1px 0 $green,
+            -1px -1px 0 $green;
 }
