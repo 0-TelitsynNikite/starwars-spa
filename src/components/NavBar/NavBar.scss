@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 1.5rem 0;
+}
+
+.nav__item {
+    text-shadow:
+            1px 1px 0 #EAFF00,
+            1px -1px 0 #EAFF00,
+            -1px 1px 0 #EAFF00,
+            -1px -1px 0 #EAFF00;
+    color: #333;
+    font-size: 20px;
+    transition: all 1s;
+}
+
+.nav__item:hover {
+    text-shadow:
+            1px 1px 0 #00FF0C,
+            1px -1px 0 #00FF0C,
+            -1px 1px 0 #00FF0C,
+            -1px -1px 0 #00FF0C;
+}
