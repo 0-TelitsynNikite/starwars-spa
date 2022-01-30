@@ -1,11 +1,20 @@
 import PeopleList from "./components/PeopleList/PeopleList";
-import './styles/index.css'
+import MainPage from "./components/MainPage/MainPage";
+import NavBar from "./components/NavBar/NavBar";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import './styles/index.scss'
 
 function App() {
 
   return (
     <div className="main">
-        <PeopleList/>
+        <BrowserRouter>
+            <NavBar/>
+            <Routes>
+                <Route path='/' element={<MainPage/>}/>
+                <Route path='/characters' element={<PeopleList/>}/>
+            </Routes>
+        </BrowserRouter>
     </div>
   );
 }
