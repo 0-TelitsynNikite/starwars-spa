@@ -1,5 +1,5 @@
 import PeopleList from "./components/PeopleList/PeopleList";
-import './index.css'
+import './styles/index.css'
 
 function App() {
 

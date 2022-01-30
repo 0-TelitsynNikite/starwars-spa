@@ -1,5 +1,5 @@
 import React from 'react';
-import './PeopleItem.css'
+import '../../styles/lists.css'
 
 const PeopleItem = ({name, id, image}) => {
     return (
