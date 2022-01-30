@@ -11,3 +11,7 @@
 body {
   background-color: #222;
 }
+
+.main {
+  padding: 0 2rem;
+}

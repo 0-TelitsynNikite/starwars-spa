@@ -31,7 +31,7 @@ const PeopleList = () => {
     return (
             <>
                 {people && (
-                    <ul className="characters-list">
+                    <ul className="list">
                         {people.map(({name, id, image}) => <PeopleItem name={name} key={id} image={image}/>)}
                     </ul>
                 )}
