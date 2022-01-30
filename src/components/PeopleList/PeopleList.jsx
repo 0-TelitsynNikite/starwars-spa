@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import StarWarsApi from "../../services/StarWarsApi";
 import PeopleItem from "../PeopleItem/PeopleItem";
+import {getPeopleId, getPeopleImage} from "../../services/getPeopleData";
+import {URL_IMG_PERSON} from "../../constants/constants";
 
 const PeopleList = () => {
     const [people, setPeople] = useState(null);
@@ -9,15 +11,18 @@ const PeopleList = () => {
         const res = await new StarWarsApi().getAllPeople();
 
         const peopleList = res.map(({name, url}) => {
+            const id = getPeopleId(url)
+            const image = getPeopleImage(id, URL_IMG_PERSON)
+            console.log(image)
             return {
                 name: name,
-                url: url
+                id: id,
+                image: image
             }
         });
 
         setPeople(peopleList);
     }
-
     useEffect( () => {
         getResource();
     }, [])
@@ -26,7 +31,7 @@ const PeopleList = () => {
             <>
                 {people && (
                     <ul>
-                        {people.map(({name, url}) => <PeopleItem name={name} key={url}/>)}
+                        {people.map(({name, id, image}) => <PeopleItem name={name} key={id} image={image}/>)}
                     </ul>
                 )}
             </>
