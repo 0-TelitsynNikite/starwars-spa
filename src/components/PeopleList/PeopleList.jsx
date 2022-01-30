@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import StarWarsApi from "../../services/StarWarsApi";
+import PeopleItem from "../PeopleItem/PeopleItem";
 
 const PeopleList = () => {
     const [people, setPeople] = useState(null);
@@ -25,7 +26,7 @@ const PeopleList = () => {
             <>
                 {people && (
                     <ul>
-                        {people.map(({name, url}) => <li key={url}>{name}</li>)}
+                        {people.map(({name, url}) => <PeopleItem name={name} key={url}/>)}
                     </ul>
                 )}
             </>
