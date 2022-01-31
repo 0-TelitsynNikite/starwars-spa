@@ -1,4 +1,4 @@
-import {API_PEOPLE} from "../constants/constants";
+import {API_PEOPLE, API_PLANETS, API_VEHICLES} from "../constants/constants";
 
 export default class StarWarsApi {
     async getResource(url) {
@@ -6,9 +6,18 @@ export default class StarWarsApi {
         return res.json();
     }
 
-    async getAllPeople() {
+     getAllPeople() {
         const res = this.getResource(API_PEOPLE).then(data => data.results);
         return res;
     }
 
+    getAllPlanets() {
+        const res = this.getResource(API_PLANETS).then(data => data.results);
+        return res;
+    }
+
+    getAllVehicles() {
+        const res = this.getResource(API_VEHICLES).then(data => data.results);
+        return res;
+    }
 }
