@@ -16,13 +16,15 @@
             -1px -1px 0 $gold;
     color: #333;
     font-size: 20px;
-    transition: all 1s;
-}
-
-.nav__item:hover {
+    border-bottom: 2px solid transparent;
+  &:hover {
     text-shadow:
             1px 1px 0 $green,
             1px -1px 0 $green,
             -1px 1px 0 $green,
             -1px -1px 0 $green;
+  }
+  &.active {
+    border-bottom: 2px solid $green;
+  }
 }

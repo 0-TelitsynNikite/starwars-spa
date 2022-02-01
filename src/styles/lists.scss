@@ -1,13 +1,11 @@
 @import './index.scss';
 
-
 .list {
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 30px;
-    background: url("https://oboi.ringtonz.ru/uploads/posts/2020-04/1585991326_zvezdnoe_nebo_zvezdy_chernyj_blesk_118255_1440x2560.jpg") no-repeat center;
 }
 
 .list__item {
