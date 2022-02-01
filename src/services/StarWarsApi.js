@@ -6,18 +6,8 @@ export default class StarWarsApi {
         return res.json();
     }
 
-     getAllPeople() {
-        const res = this.getResource(API_PEOPLE).then(data => data.results);
-        return res;
-    }
-
-    getAllPlanets() {
-        const res = this.getResource(API_PLANETS).then(data => data.results);
-        return res;
-    }
-
-    getAllVehicles() {
-        const res = this.getResource(API_VEHICLES).then(data => data.results);
+    getAllData(url) {
+        const res = this.getResource(url).then(data => data.results);
         return res;
     }
 }

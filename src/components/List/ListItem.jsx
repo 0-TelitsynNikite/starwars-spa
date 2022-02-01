@@ -1,12 +1,13 @@
 import React from 'react';
+import '../../styles/lists.scss'
 
-const VehicleItem = ({name, image}) => {
+const ListItem = ({name, image}) => {
     return (
         <li className="list__item">
-            <img className="list__img" src={image} alt=""/>
+            <img className="list__img" src={image} alt={name}/>
             <a className="list__text" href="#">{name}</a>
         </li>
     );
 };
 
-export default VehicleItem;
+export default ListItem;
